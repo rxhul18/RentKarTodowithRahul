@@ -3,7 +3,7 @@ const Todo = require('../models/Todo');
 
 const router = express.Router();
 
-// Create a new todo
+// Create a new todo in mongoDb
 router.post('/', async (req, res) => {
   const { title, description } = req.body;
   try {
@@ -28,7 +28,7 @@ router.get('/', async (req, res) => {
   }
 });
 
-// Update a todo
+// Update for is complete a todo
 router.put('/:id', async (req, res) => {
   const { title, description, completed } = req.body;
   try {

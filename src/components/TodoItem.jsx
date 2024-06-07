@@ -24,8 +24,7 @@ const TodoItem = ({ todo }) => {
       </div>
       <div className='col-4 button-part'>
           <button onClick={handleComplete} className='complete-undo-button'>
-            {/* {todo.completed ? 'Undo' : 'Complete'} */}
-            Complete
+            {todo.completed ? 'Undo' : 'Complete'}
           </button>
           <button onClick={handleDelete} className='delete-button'>Delete</button>
       </div>

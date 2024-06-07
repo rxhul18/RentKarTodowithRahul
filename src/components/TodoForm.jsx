@@ -11,6 +11,7 @@ const TodoForm = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     dispatch(addTodoData({ title, description }));
+    // setting the value blank for new todos
     setTitle("");
     setDescription("");
   };
