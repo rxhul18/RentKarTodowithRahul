@@ -1,0 +1,45 @@
+
+.todo-list-card{
+    margin-bottom: 3px;
+    border-radius: 10px;
+    .details-part{
+        background-color: #555555;
+        h4{
+            background-color: #555555;
+            padding: 1rem 0 0 0;
+            margin: 0;
+            color: orange;
+        }
+        .line-strike{
+            color: rgba(128, 128, 128, 0.80) ;
+            text-decoration: line-through;
+        }
+        p{
+            background-color: #555555;
+        }
+        .para-strike{
+            color: rgba(128, 128, 128, 0.50);
+        }
+    }
+    .button-part{
+        background-color: #555555;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        margin: 0 auto;
+        .complete-undo-button{
+            background-color: white;
+            color: rgb(104, 193, 104);
+            border: 2px solid green;
+            border-radius: 23px;
+            padding: 7px 20px;
+        }
+        .delete-button{
+            background-color: white;
+            color: orangered;
+            border: 2px solid orangered;
+            border-radius: 23px;
+            padding: 7px 20px;
+        }
+    }
+}
