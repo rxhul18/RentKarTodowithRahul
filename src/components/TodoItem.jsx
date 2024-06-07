@@ -16,13 +16,13 @@ const TodoItem = ({ todo }) => {
 
   return(
     <div className='row todo-list-card'>
-      <div className='col-8 details-part'>
+      <div className='col-12 details-part col-sm-12 col-md-8 col-xl-8'>
       <h4 className={todo.completed ? 'line-strike': null}>
         {todo.title}
       </h4>
       <p className={todo.completed ? 'para-strike':null}>{todo.description}</p>
       </div>
-      <div className='col-4 button-part'>
+      <div className='col-12 button-part col-sm-12 col-md-4 col-xl-4'>
           <button onClick={handleComplete} className='complete-undo-button'>
             {todo.completed ? 'Undo' : 'Complete'}
           </button>

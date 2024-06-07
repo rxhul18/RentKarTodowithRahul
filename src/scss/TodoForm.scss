@@ -16,6 +16,9 @@ form {
                 input:focus {
                     outline: 1px solid orange
                 }
+                @media (max-width:768px) {
+                    width: 60%;
+                }
             }
             .desInput{
                 width: 100%;
@@ -28,6 +31,9 @@ form {
                 background-color: rgb(255, 123, 0);
                 border: none;
                 border-radius: 3px;
+                font-family: "Fira Sans", sans-serif;
+                font-weight: 400;
+                font-style: normal;
                 height: 100%;
                 width: 90%;
             }

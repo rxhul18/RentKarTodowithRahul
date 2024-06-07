@@ -3,12 +3,30 @@
   color: white;
   .title{
     text-align: center;
-    margin: 4rem 0 0 0;
-    font-size: 2.5rem;
+    margin: 3.5rem 0 0 0;
+    font-size: 3rem;
     font-weight: 600;
     width: 100%;
     span{
       color: orange;
     }
+  }
+}
+
+// Here is Common SCSS
+.mobile-view-todo-btn{
+  @media (max-width:768px) {
+    margin-top: 1rem;
+    button{
+      padding: 9px 0;
+    }
+  }
+}
+
+.container{
+  @media (max-width:768px) {
+    width: 95%;
+    display: flex;
+    margin: 0 auto;
   }
 }

@@ -1,17 +1,18 @@
 // 
+require('dotenv').config();
 const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
 
 const app = express();
-const PORT = process.env.PORT || 9000;
+const PORT = process.env.PORT || 6000;
 
 // ueing Middleware for secruity 
 app.use(cors());
 app.use(express.json());
 
 // Buliding Connection between MongoDB databse
-mongoose.connect('mongodb://localhost:27017/todoApp', {
+mongoose.connect(process.env.DATABASEURL, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
