@@ -6,6 +6,9 @@ form {
         background-color: #555555;
         .input-section {
             background-color: #555555;
+            @media (max-width:576px) {
+                display: block !important;
+            }
             input {
                 background-color: white;
                 color: black;
@@ -19,9 +22,15 @@ form {
                 @media (max-width:768px) {
                     width: 60%;
                 }
+                @media (max-width:576px) {
+                    width: 100%;
+                }
             }
             .desInput{
                 width: 100%;
+                @media (max-width:576px) {
+                    margin-top: 10px;
+                }
             }
         }
         
@@ -36,6 +45,9 @@ form {
                 font-style: normal;
                 height: 100%;
                 width: 90%;
+                @media (max-width:576px) {
+                    width: 50%;
+                }
             }
         }
     }

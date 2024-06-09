@@ -15,7 +15,7 @@ const TodoItem = ({ todo }) => {
   };
 
   return(
-    <div className='row todo-list-card'>
+    <div className='todo-list-card row'>
       <div className='col-12 details-part col-sm-12 col-md-8 col-xl-8'>
       <h4 className={todo.completed ? 'line-strike': null}>
         {todo.title}

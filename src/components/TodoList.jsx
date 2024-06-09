@@ -23,10 +23,12 @@ const TodoList = () => {
   }
 
   return (
-    <div className='mt-4 container'>
-      {todos.map((todo) => (
-        <TodoItem key={todo._id} todo={todo} />
-      ))}
+    <div className='container mt-4'>
+      <div className='row mx-0 w-100'>
+        {todos.map((todo) => (
+          <TodoItem key={todo._id} todo={todo} />
+        ))}
+      </div>
     </div>
   );
 };
